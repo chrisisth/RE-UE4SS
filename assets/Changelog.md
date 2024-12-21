@@ -1,6 +1,6 @@
 v3.1.0
 ==============
-TBD
+2024-12-21
 
 some notes about most important changes such as:
 - changing of default ue4ss install location, overriding and its backwards compatibility
