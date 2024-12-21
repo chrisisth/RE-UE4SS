@@ -233,7 +233,7 @@ def ready_changelog_for_release(changelog_path):
     with open(changelog_path, 'r') as file:
         lines = file.readlines()
     version = lines[0].strip()
-    if lines[2] != 'TBD\n':
+    if lines[2].strip() != 'TBD':
         raise Exception('date is not "TBD"')
     lines[2] = datetime.today().strftime('%Y-%m-%d') + '\n'
     with open(changelog_path, 'w') as file:
